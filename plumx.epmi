@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='https://ci.eprints-hosting.org/id/epm/plumx'>
+  <epmid>plumx</epmid>
+  <uri>https://ci.eprints-hosting.org/id/epm/plumx</uri>
+  <documents>
+    <document>
+      <files>
+        <file>
+          <filename>epm/plumx/cfg/cfg.d/z_plumx.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>6395a2b0166828c16c66466e5d91c925</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2054</filesize>
+        </file>
+        <file>
+          <filename>epm/plumx/cfg/static/style/plumx_hide_box.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>5e7ba51f2fd37b6ed8483efa330ca8e4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>394</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Plumx.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>b1c7271e6200edb4c6382a68f7cdcddb</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1289</filesize>
+        </file>
+        <file>
+          <filename>static/images/epm/icon_plumx.png</filename>
+          <mime_type>image/png</mime_type>
+          <hash>d2c1a424c798428b2c668f450b582246</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>44645</filesize>
+        </file>
+        <file>
+          <filename>static/javascript/auto/99_plumx.js</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>94d204f3991350aff9105322cbeea641</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2676</filesize>
+        </file>
+        <file>
+          <filename>static/style/auto/plumx.css</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>f3dcd11ceabe139cc52269827de97447</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>103</filesize>
+        </file>
+      </files>
+      <mime_type>text/plain</mime_type>
+      <format>text</format>
+      <main>static/style/auto/plumx.css</main>
+      <content>install</content>
+    </document>
+    <document>
+      <files>
+        <file>
+          <filename>static/images/epm/icon_plumx.png</filename>
+          <mime_type>image/png</mime_type>
+          <hash>d2c1a424c798428b2c668f450b582246</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>44645</filesize>
+        </file>
+      </files>
+      <format>image</format>
+      <main>static/images/epm/icon_plumx.png</main>
+      <content>coverimage</content>
+    </document>
+  </documents>
+  <version>0.1</version>
+  <creators>
+    <item>
+      <name>
+        <family>David R</family>
+        <given>Newman</given>
+      </name>
+      <id>drn@ecs.soton.ac.uk</id>
+    </item>
+  </creators>
+  <title>PlumX</title>
+  <description>PlumX provides an EPrints Box Screen plugin that displays a PlumX widget.
+
+By default this uses the &apos;details&apos; version of the PlumX widget but can be reconfigured by setting $c-&gt;{plumx}-&gt;{type} to &apos;summary&apos;, &apos;plum-print-popup&apos; or &apos;plum-print-popup-badge&apos; for the different types of widget.  By default the default PlumX theme is used by can be reconfigured to use the &apos;big-ben&apos; or &apos;liberty&apos; themes instead.  There are further configuration options to use additional styling, in particular using /style/plumx_hide_box.css to hide the surrounding box and a option to re-enable the display of a message if there is no data for the ID provided to PlumX.  If the &apos;plum-print-popup&apos; or &apos;plum-print-popup-badge&apos; types are selected the side that the popup is displayed can be configured by setting $c-&gt;{plumx}-&gt;{popup}.
+</description>
+  <requirements>EPrints 3.3+</requirements>
+  <home_page>https://github.com/eprints/plumx</home_page>
+  <icon>images/epm/icon_plumx.png</icon>
+</epm>
