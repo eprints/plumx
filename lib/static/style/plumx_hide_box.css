@@ -1,0 +1,14 @@
+#ep_summary_box_Plumx .ep_summary_box_title {
+	display: none;
+}
+#ep_summary_box_Plumx_content {
+	box-shadow: none;
+	border: 0
+}
+#ep_summary_box_Plumx .ep_summary_box_body {
+	padding: 0;
+}
+#ep_summary_box_Plumx #plumx_summary_page
+{
+	padding: 0;
+}
