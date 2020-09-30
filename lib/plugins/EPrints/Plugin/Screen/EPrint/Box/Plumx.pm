@@ -4,6 +4,17 @@ our @ISA = ( 'EPrints::Plugin::Screen::EPrint::Box' );
 
 use strict;
 
+sub new
+{
+	my( $class, %params ) = @_;
+
+        my $self = $class->SUPER::new(%params);
+
+	$self->{class} = "ep_summary_box_Plumx";
+
+	return $self;
+}
+
 sub can_be_viewed
 {
         my( $self ) = @_;
