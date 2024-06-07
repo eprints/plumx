@@ -1,0 +1,23 @@
+#!/bin/bash
+d=`dirname $0`
+cd $d
+dir=`pwd`
+if [ "$1" == "make" ]; then
+	mkdir lib/cfg.d/
+	ln -sf ../../cfg/cfg.d/z_plumx.pl lib/cfg.d/z_plumx.pl
+	ln -sf lib/cfg.d/ 
+	ln -sf lib/static/
+	ln -sf lib/lang/
+	ln -sf lib/plugins/
+elif [ "$1" == "unmake" ]; then
+	rm -f lib/plugins/
+	rm -f lib/lang/
+	rm -f lib/static/
+	rm -f lib/cfg.d/
+	rm -f lib/cfg.d/z_plumx.p
+	rmdir lib/cfg.d/
+fi
+if ls $dir/../../flavours/*/inc 1> /dev/null 2>&1; then 
+	touch $dir/../../flavours/*/inc
+fi
+exit 0
