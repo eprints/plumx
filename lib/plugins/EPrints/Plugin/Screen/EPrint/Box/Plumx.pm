@@ -19,7 +19,6 @@ sub can_be_viewed
 {
         my( $self ) = @_;
 
-        return 0 if $self->{session}->get_secure;
         return 0 if( !defined $self->{processor}->{eprint} );
         return 0 if( !$self->{session}->can_call( "plumx", "get_type_and_id" ) );
 	my ( $type, $id ) = $self->{session}->call( [ "plumx", "get_type_and_id" ], $self->{processor}->{eprint} );
